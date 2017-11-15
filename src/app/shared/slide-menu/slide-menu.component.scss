@@ -1,6 +1,7 @@
 :host {
   z-index: 2147483647;
 }
+
 nav {
   position: absolute;
   top: 0;
@@ -11,4 +12,16 @@ nav {
 button {
   border: 0px #ffffff;
   width: 10px;
+}
+
+ul {
+  list-style:none;
+}
+
+li {
+  margin: 15px 2px;  
+}
+
+a {
+  white-space: nowrap;
 }

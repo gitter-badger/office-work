@@ -2,11 +2,15 @@
 <nav [@collapse]="collapse">
   <span [hidden]="collapse==='closed'">
     <button [@collapseButton]="collapse" (click)="toggleCollapse()"><i class="material-icons">view_headline</i></button>
-    <ol>
-    <i>めにゅー</i><br>
-    <i>めにゅー</i><br>
-    <i>めにゅー</i><br>
-    </ol>
+    <ul class="nav navbar-nav">
+      <li><a>勤怠</a></li>
+      <li><a>給与明細</a></li>
+      <li><a>仕訳表</a></li>
+      <li><a>売上管理台帳</a></li>
+      <li><a>給与管理台帳</a></li>
+      <li><a>マスタ管理</a></li>
+      <li><a>ログアウト</a></li>
+    </ul>
   </span>
   <!-- <span [hidden]="collapse==='open'"></span> -->
 </nav>
