@@ -1,0 +1,23 @@
+<div>
+  <form #form="ngForm" novalidate>
+    <ow-input
+    [type]="'text'"
+    [label]="'user id'"
+    [value]="user_id"
+    [required]="true"
+    [placeholder]="'ユーザID'"
+    (outputEvent)="user_id = $event"
+    ></ow-input>
+    <ow-input
+    [type]="'password'"
+    [label]="'passowrd'"
+    [value]="password"
+    [required]="true"
+    [placeholder]="'パスワード'"
+    (outputEvent)="password = $event"
+    ></ow-input>
+    <ow-button
+    [label]="'login'"
+    (clickEvent)="onClick()"></ow-button>
+  </form>
+</div>
