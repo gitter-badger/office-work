@@ -1,16 +1,17 @@
-<div><a class="open material-icons" [@collapseButton]="collapse" (click)="toggleCollapse()">view_headline</a><span>Ashiras, inc.</span></div>
+<div><a class="open" [@collapseButton]="collapse" (click)="toggleCollapse()"><span class="material-icons">view_headline</span>Ashiras, inc.</a></div>
+<hr>
 <nav [@collapse]="collapse">
   <span [hidden]="collapse==='closed'">
-    <div><a class="open material-icons" [@collapseButton]="collapse" (click)="toggleCollapse()">view_headline</a><span>Ashiras, inc.</span></div>
+    <div><a class="open" [@collapseButton]="collapse" (click)="toggleCollapse()"><span class="material-icons">view_headline</span>Ashiras, inc.</a></div>
+    <hr>
     <ul class="nav navbar-nav">
-      <li><a>勤怠</a></li>
-      <li><a>給与明細</a></li>
-      <li><a>仕訳表</a></li>
-      <li><a>売上管理台帳</a></li>
-      <li><a>給与管理台帳</a></li>
-      <li><a>マスタ管理</a></li>
-      <li><a>ログアウト</a></li>
+      <li><a><span class="material-icons">question_answer</span>勤怠</a></li>
+      <li><a><span class="material-icons">question_answer</span>給与明細</a></li>
+      <li><a><span class="material-icons">question_answer</span>仕訳表</a></li>
+      <li><a><span class="material-icons">question_answer</span>売上管理台帳</a></li>
+      <li><a><span class="material-icons">question_answer</span>給与管理台帳</a></li>
+      <li><a><span class="material-icons">question_answer</span>マスタ管理</a></li>
+      <li><a><span class="material-icons">exit_to_app</span>ログアウト</a></li>
     </ul>
   </span>
-  <!-- <span [hidden]="collapse==='open'"></span> -->
 </nav>

@@ -24,14 +24,20 @@ a {
   white-space: nowrap;
 }
 
+a > span {
+  padding: 0 1rem;
+}
+
 .open {
   margin: 20px;
 }
 
 span {
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 div {
+  margin-top: 10px;
   vertical-align: middle;
 }
