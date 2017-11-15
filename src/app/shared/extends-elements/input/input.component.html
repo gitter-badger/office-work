@@ -5,4 +5,4 @@
   required="{{required}}"
   (blur)="onOutputEvent(value)"
 >
-<div class="error-message" *ngIf="value">必須入力です</div>
+<div class="error-message" *ngIf="value===''">必須入力です</div>
