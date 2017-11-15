@@ -1,7 +1,7 @@
-<button [@collapseButton]="collapse" (click)="toggleCollapse()"><i class="material-icons">view_headline</i></button>
+<div><a class="open material-icons" [@collapseButton]="collapse" (click)="toggleCollapse()">view_headline</a><span>Ashiras, inc.</span></div>
 <nav [@collapse]="collapse">
   <span [hidden]="collapse==='closed'">
-    <button [@collapseButton]="collapse" (click)="toggleCollapse()"><i class="material-icons">view_headline</i></button>
+    <div><a class="open material-icons" [@collapseButton]="collapse" (click)="toggleCollapse()">view_headline</a><span>Ashiras, inc.</span></div>
     <ul class="nav navbar-nav">
       <li><a>勤怠</a></li>
       <li><a>給与明細</a></li>

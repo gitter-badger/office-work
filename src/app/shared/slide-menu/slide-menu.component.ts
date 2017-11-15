@@ -25,7 +25,6 @@ import {
     ]),
     trigger('collapseButton', [
       state('open', style({
-        backgroundColor: '#dddddd'
       })),
       state('closed', style({
         backgroundColor: '#ffffff'
