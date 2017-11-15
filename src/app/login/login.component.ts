@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms'
 
 @Component({
   selector: 'ow-login',
@@ -10,6 +11,7 @@ export class LoginComponent implements OnInit {
 
   user_id: string;
   password: string
+  loginInfo: FormGroup;
 
   constructor() {
   }
@@ -20,4 +22,5 @@ export class LoginComponent implements OnInit {
   onClick() {
     console.log('onClick', this.user_id, this.password);
   }
+  
 }

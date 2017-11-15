@@ -1,4 +1,12 @@
-<p>
-  slide-menu works!
-  <ng-content select="ul"></ng-content>
-</p>
+<button [@collapseButton]="collapse" (click)="toggleCollapse()"><i class="material-icons">view_headline</i></button>
+<nav [@collapse]="collapse">
+  <span [hidden]="collapse==='closed'">
+    <button [@collapseButton]="collapse" (click)="toggleCollapse()"><i class="material-icons">view_headline</i></button>
+    <ol>
+    <i>めにゅー</i><br>
+    <i>めにゅー</i><br>
+    <i>めにゅー</i><br>
+    </ol>
+  </span>
+  <!-- <span [hidden]="collapse==='open'"></span> -->
+</nav>

@@ -13,9 +13,10 @@ export class ButtonComponent implements OnInit {
 
   @Output()
   private clickEvent = new EventEmitter();
-  public onClick($event: KeyboardEvent): void {
+  onClick($event): void {
     this.clickEvent.emit($event);
   }
+  
   constructor() { }
 
   ngOnInit() {

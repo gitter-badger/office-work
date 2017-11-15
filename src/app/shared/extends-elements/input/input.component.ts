@@ -7,22 +7,20 @@ import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } fro
   encapsulation: ViewEncapsulation.Emulated
 })
 export class InputComponent implements OnInit {
-
-  @Input() label;
-  @Input() type;
-  
-  @Input() value;
-  @Output() outputEvent = new EventEmitter();
-  @Input() required;
-  @Input() placeholder;
+  @Input() label: string;
+  @Input() type: string;
+  @Input() value: string;
+  @Output() output = new EventEmitter();
+  @Input() required: boolean;
+  @Input() disabled = false;
+  @Input() placeholder: string;
 
   constructor() { }
 
   ngOnInit() {
   }
   
-  onOutputEvent(value): void {
-    console.log('value', value);
-    this.outputEvent.emit(value);
+  onOutput(value): void {
+    this.output.emit(value);
   }
 }
