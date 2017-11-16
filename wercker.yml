@@ -112,9 +112,9 @@ deploy:
     - script:
         name: set git
         code: |
-          git remote add azure https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git config --global user.email "${USER_EMAIL}"
           git config --global user.name "${USER_NANE}"
+          git remote add azure https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git add .
           git commit -m "azure push"
           git push azure azure:master --force
