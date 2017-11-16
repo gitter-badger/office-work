@@ -116,5 +116,5 @@ deploy:
         code: |
           git remote add deploy https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git add .
-          git commit -m "ci release"
+          git commit -m "wercker ci release"
           git push deploy release --force
