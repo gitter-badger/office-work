@@ -3,14 +3,13 @@
 <nav [@collapse]="collapse">
   <span [hidden]="collapse==='closed'">
     <div><a class="open" [@collapseButton]="collapse" (click)="toggleCollapse()"><span class="material-icons">view_headline</span>Ashiras, inc.</a></div>
-    <hr>
     <ul class="nav navbar-nav">
-      <li><a><span class="material-icons">question_answer</span>勤怠</a></li>
-      <li><a><span class="material-icons">question_answer</span>給与明細</a></li>
+      <li><a><span class="material-icons">move_to_inbox</span>勤怠</a></li>
+      <li><a><span class="material-icons">content_paste</span>給与明細</a></li>
       <li><a><span class="material-icons">question_answer</span>仕訳表</a></li>
-      <li><a><span class="material-icons">question_answer</span>売上管理台帳</a></li>
-      <li><a><span class="material-icons">question_answer</span>給与管理台帳</a></li>
-      <li><a><span class="material-icons">question_answer</span>マスタ管理</a></li>
+      <li><a><span class="material-icons">insert_chart</span>売上管理台帳</a></li>
+      <li><a><span class="material-icons">monetization_on</span>給与管理台帳</a></li>
+      <li><a><span class="material-icons">account_box</span>マスタ管理</a></li>
       <li><a><span class="material-icons">exit_to_app</span>ログアウト</a></li>
     </ul>
   </span>
