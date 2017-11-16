@@ -106,7 +106,6 @@ deploy:
           npm run build
     - install-packages:
         packages: lftp
-    # lftp -u ashiras\ashiras,Ashiras0310 -e "mirror -Rev -X wercker.yml dist/. /site/wwwroot/." waws-prod-sn1-041.ftp.azurewebsites.windows.net
     - script:
         name: azure ftp deploy
         code: |
