@@ -111,6 +111,8 @@ deploy:
           git checkout -b release
           npm run build
           ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
+          mv dist/* .
+          rm -r dist
     - script:
         name: set git
         code: |
