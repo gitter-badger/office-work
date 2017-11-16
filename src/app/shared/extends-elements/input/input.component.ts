@@ -19,7 +19,7 @@ export class InputComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   onOutput(value): void {
     this.output.emit(value);
   }

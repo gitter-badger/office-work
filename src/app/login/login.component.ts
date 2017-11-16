@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms'
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'ow-login',
@@ -10,7 +10,7 @@ import { FormGroup, FormControl } from '@angular/forms'
 export class LoginComponent implements OnInit {
 
   user_id: string;
-  password: string
+  password: string;
   loginInfo: FormGroup;
 
   constructor() {
@@ -27,5 +27,5 @@ export class LoginComponent implements OnInit {
     this.user_id = undefined;
     this.password = undefined;
   }
-  
+
 }

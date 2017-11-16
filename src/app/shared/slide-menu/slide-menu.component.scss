@@ -1,15 +1,15 @@
-@import "../../../colors.scss";
+@import "../../../colors";
 
 :host {
   z-index: 2147483647;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  height: 100vh;
   background-color: $corp-color;
   color: $base-color;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 }
 
 ul {
@@ -37,8 +37,8 @@ a > span {
 }
 
 span {
-  white-space: nowrap;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 div {
