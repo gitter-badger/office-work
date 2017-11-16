@@ -106,6 +106,8 @@ deploy:
     - script:
         name: build
         code: |
+          git config --global user.email "${USER_EMAIL}"
+          git config --global user.name "${USER_NANE}"
           git checkout -b azure
           npm run build
           ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
@@ -116,8 +118,6 @@ deploy:
     - script:
         name: set git
         code: |
-          git config --global user.email "${USER_EMAIL}"
-          git config --global user.name "${USER_NANE}"
           git remote add azure https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git add .
           git commit -m "azure push"
