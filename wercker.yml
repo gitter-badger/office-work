@@ -109,7 +109,6 @@ deploy:
           git checkout -b azure
           npm run build
           ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
-          mv server/* .
     - script:
         name: set git
         code: |
