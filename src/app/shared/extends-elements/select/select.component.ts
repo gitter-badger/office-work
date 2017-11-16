@@ -12,7 +12,7 @@ export class SelectComponent implements OnInit {
   @Input() name: string;
   @Input() id: string;
   @Input() items: any;
-  
+
   constructor() { }
 
   ngOnInit() {

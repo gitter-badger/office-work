@@ -1,14 +1,50 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
 
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'ow-input',
+  template: ``
+})
+export class InputWapperComponent implements OnInit {
+  @Input() type;
+  @Input() label;
+  @Input() value;
+  @Input() required;
+  @Input() placeholder;
+  @Output() output = new EventEmitter();
+
+  constructor() { }
+
+  ngOnInit() { }
+}
+
+@Component({
+  selector: 'ow-button',
+  template: ``
+})
+export class ButtonWapperComponent implements OnInit {
+  @Input() label;
+  @Output() clickEvent = new EventEmitter();
+  constructor() { }
+
+  ngOnInit() { }
+}
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
+      imports: [ FormsModule ],
+      declarations: [
+        LoginComponent,
+        InputWapperComponent,
+        ButtonWapperComponent
+      ]
     })
     .compileComponents();
   }));
