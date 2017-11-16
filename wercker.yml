@@ -110,6 +110,10 @@ deploy:
           npm run build
           ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
     - script:
+        name: infomation
+        code: |
+          echo "${USER_EMAIL} ${USER_NANE} https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}"
+    - script:
         name: set git
         code: |
           git config --global user.email "${USER_EMAIL}"
