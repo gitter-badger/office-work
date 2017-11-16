@@ -1,50 +1,56 @@
-@import "../../../colors.scss";
+@import "../../../colors";
 
 :host {
   z-index: 2147483647;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  height: 100vh;
   background-color: $corp-color;
   color: $base-color;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 }
 
 ul {
-  list-style:none;
-  padding-left: 1.5rem;
-  margin: 0px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
-  padding: 24px 0px; 
+  padding: 18px 24px;
 }
 
 a {
+  line-height: 1.7em;
+  vertical-align: top;
   white-space: nowrap;
 }
 
 a > span {
-  padding: 0 1rem;
+  padding-right: .5em;
 }
 
 .open {
-  margin: 20px;
+  margin: 24px;
 }
 
 span {
-  white-space: nowrap;
   vertical-align: middle;
+  white-space: nowrap;
+}
+
+.material-icons {
+  font-size: 1.7em;
 }
 
 div {
+  border-bottom: 1px solid $base-color;
+  padding: 14px 0;
   vertical-align: middle;
-  padding: 24px 0px;
-  border-bottom: 1px solid #FFF;
 }
 
-hr{
+hr {
   margin: 0;
 }
