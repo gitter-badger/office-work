@@ -90,7 +90,7 @@ rules:
       - style: '1tbs'
       - allow-single-line: true
   clean-import-paths:
-    - 0
+    - 1
     -
       - leading-underscore: false
       - filename-extension: false
