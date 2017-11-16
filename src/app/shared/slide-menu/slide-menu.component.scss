@@ -14,24 +14,26 @@ nav {
 
 ul {
   list-style:none;
-  padding-left: 1.5rem;
   margin: 0px;
+  padding-left: 0px;
 }
 
 li {
-  padding: 24px 0px; 
+  padding: 18px 24px; 
 }
 
 a {
   white-space: nowrap;
+  vertical-align: top;
+  line-height: 1.7em;
 }
 
 a > span {
-  padding: 0 1rem;
+  padding-right: 0.5em;
 }
 
 .open {
-  margin: 20px;
+  margin: 24px;
 }
 
 span {
@@ -41,10 +43,14 @@ span {
 
 div {
   vertical-align: middle;
-  padding: 24px 0px;
+  padding: 14px 0px;
   border-bottom: 1px solid #FFF;
 }
 
 hr{
   margin: 0;
+}
+
+span.material-icons {
+  font-size: 1.7em;
 }
