@@ -16,7 +16,7 @@ export class InputWapperComponent implements OnInit {
   @Input() required;
   @Input() placeholder;
   @Output() output = new EventEmitter();
- 
+
   constructor() { }
 
   ngOnInit() { }
