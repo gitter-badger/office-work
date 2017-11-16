@@ -108,7 +108,7 @@ deploy:
         code: |
           git config --global user.email "${USER_EMAIL}"
           git config --global user.name "${USER_NANE}"
-          git checkout -b azure
+          git checkout -b release
           npm run build
           ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
     - script:
@@ -116,5 +116,5 @@ deploy:
         code: |
           git remote add deploy https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git add .
-          git commit -m "ci deploy"
-          git push deploy azure --force
+          git commit -m "ci release"
+          git push deploy release --force
