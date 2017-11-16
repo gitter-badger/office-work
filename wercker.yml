@@ -114,7 +114,7 @@ deploy:
     - script:
         name: set git
         code: |
-          git remote add origin https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
+          git remote add deploy https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
           git add .
-          git commit -m "azure push"
-          git push origin azure --force
+          git commit -m "ci deploy"
+          git push deploy azure --force
