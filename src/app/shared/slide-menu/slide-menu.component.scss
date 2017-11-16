@@ -14,10 +14,12 @@ nav {
 
 ul {
   list-style:none;
+  padding-left: 1.5rem;
+  margin: 0px;
 }
 
 li {
-  margin: 15px 2px;  
+  padding: 24px 0px; 
 }
 
 a {
@@ -38,6 +40,11 @@ span {
 }
 
 div {
-  margin-top: 10px;
   vertical-align: middle;
+  padding: 24px 0px;
+  border-bottom: 1px solid #FFF;
+}
+
+hr{
+  margin: 0;
 }
