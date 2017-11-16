@@ -98,6 +98,7 @@ e2e-test:
         name: ng e2e
         code: |
           npm run test
+deploy:
   steps:
     - script:
       name: npm rebuild
