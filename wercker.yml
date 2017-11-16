@@ -98,19 +98,25 @@ e2e-test:
         name: ng e2e
         code: |
           npm run test
-deploy:
   steps:
     - script:
-        name: ng build
-        code: |
-          npm run build
-    - install-packages:
-        packages: lftp
+      name: npm rebuild
+      code: npm rebuild
     - script:
-        name: azure ftp deploy
+        name: build
         code: |
-          lftp -u ${FTP_USERNAME},${FTP_PASSWORD} -e "mirror -Rev -X wercker.yml dist/. /site/wwwroot/." ${FTP_SERVER_URL}
+          git checkout -b azure
+          npm run build:prod
+          ls -a | grep -v -E 'dist|server|.git$|\.\.$|\.$' | xargs rm -r
+          mv server/* .
     - script:
-        name: echo information
+        name: set git
         code: |
-          echo "ftp up comp"
+          git remote add azure https://${GIT_USER}:${GIT_PASSWORD}@${GIT_URL}
+          git config --global user.email "${USER_EMAIL}"
+          git config --global user.name "${USER_NANE}"
+          git add .
+          git commit -m "azure push"
+          git push azure azure:master --force
+          git checkout master
+          git branch -D azure
