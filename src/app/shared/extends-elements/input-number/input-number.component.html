@@ -1,0 +1,10 @@
+<label>{{label}}</label> 
+<input type="{{type}}"
+  [(ngModel)]="value"
+  #name="ngModel"
+  placeholder="{{placeholder}}"
+  required="{{required}}"
+  disabled="{{disabled}}"
+  (blur)="onOutput(value)"
+>
+<div class="error-message"><span *ngIf="required&&name.dirty&&name.invalid">必須入力です</span></div>

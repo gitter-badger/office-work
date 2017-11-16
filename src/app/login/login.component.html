@@ -16,6 +16,14 @@
     [placeholder]="'パスワード'"
     (output)="password = $event"
     ></ow-input>
+    <ow-input-number
+    [type]="'number'"
+    [label]="'passowrd'"
+    [value]="num"
+    [required]="true"
+    [placeholder]="'パスワード'"
+    (output)="num = $event"
+    ></ow-input-number>
     <ow-button
     [label]="'login'"
     (clickEvent)="onClick()"></ow-button>
