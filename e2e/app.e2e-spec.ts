@@ -9,6 +9,6 @@ describe('office-work App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ow!');
+    expect(page.getParagraphText()).toEqual('view_headlineAshiras, inc.');
   });
 });
