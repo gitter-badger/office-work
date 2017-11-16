@@ -39,7 +39,7 @@ export class ButtonComponent implements OnInit {
     this.toggleCollapse();
     this.clickEvent.emit($event);
   }
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -49,8 +49,7 @@ export class ButtonComponent implements OnInit {
     this.collapse = this.collapse === 'active' ? 'inactive' : 'active';
     setTimeout(() => {
       this.collapse = 'inactive';
-    }, 200)
+    }, 200);
   }
-
 
 }

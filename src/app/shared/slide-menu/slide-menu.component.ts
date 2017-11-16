@@ -34,12 +34,14 @@ import {
 })
 export class SlideMenuComponent implements OnInit {
 
+  title = 'ia';
+  collapse = 'closed';
+
   constructor() { }
 
   ngOnInit() {
   }
-  title = 'ia';
-  collapse: string = 'closed';
+
   toggleCollapse() {
     this.collapse = this.collapse === 'open' ? 'closed' : 'open';
   }
