@@ -79,6 +79,25 @@ unit-test:
         name: ng test
         code: |
           npm run test
+e2e-test:
+  steps:
+    - wacul/store-link:
+      type: restore
+      prefix: node_modules/.bin
+    - script:
+        name: install chrome headless
+        code: |
+          apt-get update -y
+          apt-get install -y ca-certificates apt-transport-https ttf-wqy-zenhei ttf-unfonts-core
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+          echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+          apt-get update -y
+          apt-get install -y google-chrome-unstable
+          export CHROME_BIN=/usr/bin/google-chrome-unstable
+    - script:
+        name: ng e2e
+        code: |
+          npm run test
 deploy:
   steps:
     - script:
