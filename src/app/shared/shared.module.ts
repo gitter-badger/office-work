@@ -21,7 +21,8 @@ import { NumberFormatPipe } from './pipe/formatter/number-format.pipe';
     FooterComponent,
     SelectComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputNumberComponent
   ],
   declarations: [
     SlideMenuComponent,

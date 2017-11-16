@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } fro
   selector: 'ow-input-number',
   templateUrl: './input-number.component.html',
   styleUrls: ['./input-number.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class InputNumberComponent implements OnInit {
   @Input() label: string;
@@ -15,6 +15,7 @@ export class InputNumberComponent implements OnInit {
   @Input() disabled = false;
   @Input() placeholder: string;
 
+  flg = true;
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +23,11 @@ export class InputNumberComponent implements OnInit {
 
   onOutput(value): void {
     this.output.emit(value);
+  }
+
+  onClick(flg: boolean) {
+    console.log('onClick', flg);
+    this.flg = flg;
   }
 }
 

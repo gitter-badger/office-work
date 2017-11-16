@@ -1,0 +1,12 @@
+@import "../../../../colors";
+
+input {
+  text-align: right;
+}
+
+span {
+  background-color: $base-color;
+  border: 1px solid $base-color;
+  font-size: 16px;
+  margin: 0;  
+}
