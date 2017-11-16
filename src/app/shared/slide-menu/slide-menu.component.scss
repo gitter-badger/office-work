@@ -13,23 +13,23 @@ nav {
 }
 
 ul {
-  list-style:none;
-  margin: 0px;
-  padding-left: 0px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
-  padding: 18px 24px; 
+  padding: 18px 24px;
 }
 
 a {
-  white-space: nowrap;
-  vertical-align: top;
   line-height: 1.7em;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 a > span {
-  padding-right: 0.5em;
+  padding-right: .5em;
 }
 
 .open {
@@ -41,16 +41,16 @@ span {
   white-space: nowrap;
 }
 
-div {
-  vertical-align: middle;
-  padding: 14px 0px;
-  border-bottom: 1px solid #FFF;
-}
-
-hr{
-  margin: 0;
-}
-
-span.material-icons {
+.material-icons {
   font-size: 1.7em;
+}
+
+div {
+  border-bottom: 1px solid $base-color;
+  padding: 14px 0;
+  vertical-align: middle;
+}
+
+hr {
+  margin: 0;
 }
