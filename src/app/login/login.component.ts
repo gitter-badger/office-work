@@ -22,5 +22,10 @@ export class LoginComponent implements OnInit {
   onClick() {
     console.log('onClick', this.user_id, this.password);
   }
+
+  onClear() {
+    this.user_id = undefined;
+    this.password = undefined;
+  }
   
 }
