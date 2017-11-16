@@ -1,15 +1,18 @@
 // You can add global styles to this file, and also import other style files
 @import "colors";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 html,
 body {
+  font-family: "Noto Sans JP";
+  font-weight: 100;
   margin: 0;
   padding: 0;
 }
 
 html {
   font: $font-color;
-  font-size: 16px;
+  font-size: .9em;
 }
 
 input,
@@ -17,7 +20,7 @@ button,
 select {
   background-color: $base-color;
   border: 1px solid $base-color;
-  font-size: 16px;
+  font-size: .9em;
   margin: 0;
 }
 
