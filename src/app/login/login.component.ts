@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
+import { Auth0Service } from '../auth/auth0.service';
+
 @Component({
   selector: 'ow-login',
   templateUrl: './login.component.html',
@@ -13,7 +15,9 @@ export class LoginComponent implements OnInit {
   password: string;
   loginInfo: FormGroup;
 
-  constructor() {
+  constructor(
+    private auth0Service: Auth0Service
+  ) {
   }
 
   ngOnInit() {
@@ -21,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   onClick() {
     console.log('onClick', this.user_id, this.password);
+    this.auth0Service.login();
   }
 
   onClear() {

@@ -14,10 +14,14 @@ import { environment } from '../environments/environment';
 import { SharedModule } from '@shared/shared.module';
 import { LoginComponent } from './login/login.component';
 
+import { Auth0Service } from './auth/auth0.service';
+import { CallbackComponent } from './callback/callback.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,7 @@ import { LoginComponent } from './login/login.component';
     SharedModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
-  providers: [],
+  providers: [Auth0Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
