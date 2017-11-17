@@ -33,6 +33,26 @@ export class ButtonWapperComponent implements OnInit {
 
   ngOnInit() { }
 }
+
+@Component({
+  selector: 'ow-input-number',
+  template: ``
+})
+
+export class InputNumberWapperComponent implements OnInit {
+  @Input() label: string;
+  @Input() type: string;
+  @Input() value: string;
+  @Output() output = new EventEmitter();
+  @Input() required: boolean;
+  @Input() disabled = false;
+  @Input() placeholder: string;
+  
+  constructor() { }
+
+  ngOnInit() { }
+}
+
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
@@ -43,7 +63,8 @@ describe('LoginComponent', () => {
       declarations: [
         LoginComponent,
         InputWapperComponent,
-        ButtonWapperComponent
+        ButtonWapperComponent,
+        InputNumberWapperComponent
       ]
     })
     .compileComponents();
