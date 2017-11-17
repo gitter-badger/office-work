@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
 
   user_id: string;
   password: string;
+  num: number;
   loginInfo: FormGroup;
 
   constructor() {
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   onClick() {
-    console.log('onClick', this.user_id, this.password);
+    console.log('onClick', this.user_id, this.password, this.num);
   }
 
   onClear() {

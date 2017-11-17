@@ -8,7 +8,6 @@ import { SelectComponent } from './extends-elements/select/select.component';
 import { InputComponent } from './extends-elements/input/input.component';
 import { ButtonComponent } from './extends-elements/button/button.component';
 import { InputNumberComponent } from './extends-elements/input-number/input-number.component';
-import { NumberFormatPipe } from './pipe/formatter/number-format.pipe';
 
 @NgModule({
   imports: [
@@ -31,8 +30,7 @@ import { NumberFormatPipe } from './pipe/formatter/number-format.pipe';
     SelectComponent,
     InputComponent,
     ButtonComponent,
-    InputNumberComponent,
-    NumberFormatPipe
+    InputNumberComponent
   ]
 })
 export class SharedModule { }
