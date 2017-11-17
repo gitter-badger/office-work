@@ -29,7 +29,7 @@ label {
   font-size: .8rem;
 }
 
-button, {
+button {
   border: 1px solid $border-color;
   color: $font-color;
   height: 3rem;
@@ -38,7 +38,9 @@ button, {
   width: 100%;
 }
 
-button:focus {
+button:focus,
+input:focus,
+select:focus {
   outline: 0 solid $border-color;
 }
 
@@ -47,10 +49,6 @@ input {
   margin: 2px;
   padding: 5px;
   width: 100%;
-}
-
-input:focus {
-  outline: 0 solid $border-color;
 }
 
 select {

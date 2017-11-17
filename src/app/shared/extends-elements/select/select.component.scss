@@ -1,10 +1,27 @@
 @import "../../../../colors";
 
-div {
+.select {
   border-bottom: 1px solid $border-color;
+  height: 2rem;
   padding: 5px;
+  position: relative;
 }
 
 select {
+  height: 2rem;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
+
+input {
+  border-bottom: none;
+  position: absolute;
+  width: 90%;
+  z-index: 2;
+}
+
+.error-message {
+  min-height: 1rem;
+}
+

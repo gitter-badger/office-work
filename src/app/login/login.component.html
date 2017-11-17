@@ -16,6 +16,11 @@
     [placeholder]="'パスワード'"
     (output)="password = $event"
     ></ow-input>
+
+    <ow-select
+    [label]="'都道府県'"
+    [items]="items"
+    ></ow-select>
     <ow-button
     [label]="'login'"
     (clickEvent)="onClick()"></ow-button>

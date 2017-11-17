@@ -1,5 +1,8 @@
-<div>
-  <select name="{{name}}" id="{{id}}">
-    <option *ngFor="let item of items;" value="item.value" >{{item.value}}</option>
+<label>{{label}}</label>
+<div class="select">
+  <input type="text" [(ngModel)]="selectedItem.value">
+  <select [(ngModel)]="selectedItem">
+    <option *ngFor="let item of items;" [ngValue]="item" >{{item.value}}</option>
   </select>
 </div>
+<div class="error-message"><span *ngIf="required&&name.dirty&&name.invalid">必須入力です</span></div>
