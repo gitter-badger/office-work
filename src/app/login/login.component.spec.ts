@@ -33,6 +33,26 @@ export class ButtonWapperComponent implements OnInit {
 
   ngOnInit() { }
 }
+
+@Component({
+  selector: 'ow-select',
+  template: ``
+})
+export class SelectWapperComponent implements OnInit {
+
+  @Input() label: string;
+  @Input() items: Select;
+
+  constructor() { }
+
+  ngOnInit() { }
+}
+
+export class Select {
+  key: string;
+  value: string;
+}
+
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
@@ -43,7 +63,8 @@ describe('LoginComponent', () => {
       declarations: [
         LoginComponent,
         InputWapperComponent,
-        ButtonWapperComponent
+        ButtonWapperComponent,
+        SelectWapperComponent
       ]
     })
     .compileComponents();
