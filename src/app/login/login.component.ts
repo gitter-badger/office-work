@@ -13,6 +13,16 @@ export class LoginComponent implements OnInit {
   password: string;
   num: number;
   loginInfo: FormGroup;
+  items = [{
+    key: 0,
+    value: '北海道'
+  }, {
+    key: 1,
+    value: '東京'
+  }, {
+    key: 2,
+    value: '神戸'
+  }];
 
   constructor() {
   }
