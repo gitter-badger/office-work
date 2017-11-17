@@ -5,6 +5,6 @@
   </select>
   <input type="text"
   #name="ngModel"
-  [(ngModel)]="selectedItem.value">
+  [ngModel]="selectedItem.value">
 </div>
 <div class="error-message"><span *ngIf="required&&name.dirty&&name.invalid">必須入力です</span></div>
