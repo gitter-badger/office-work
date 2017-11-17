@@ -6,7 +6,7 @@
 
 nav {
   background-color: $corp-color;
-  color: $base-color;
+  color: $menu-color;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -19,7 +19,7 @@ ul {
 }
 
 li {
-  padding: 18px 24px;
+  padding: 19px 24px;
 }
 
 a {
@@ -34,7 +34,7 @@ a > span {
 
 .open {
   color: $corp-color;
-  margin: 1px;
+  cursor: default;
 }
 
 span {
@@ -43,13 +43,17 @@ span {
 }
 
 .material-icons {
-  font-size: 1.7em;
+  font-size: 1.8em;
 }
 
-div {
+.close-menu {
   border-bottom: 1px solid $base-color;
-  padding: 14px 0 12px 24px;
-  vertical-align: middle;
+  padding: 13px 24px;
+}
+
+.open-menu {
+  border-bottom: 1px solid $gray-color;
+  padding: 15px 24px;
 }
 
 hr {
@@ -57,5 +61,5 @@ hr {
 }
 
 img {
-  width: 40%;
+  height: 25px;
 }
