@@ -16,7 +16,14 @@
     [placeholder]="'パスワード'"
     (output)="password = $event"
     ></ow-input>
-
+    <ow-input-number
+    [type]="'number'"
+    [label]="'passowrd'"
+    [value]="num"
+    [required]="true"
+    [placeholder]="'パスワード'"
+    (output)="num = $event"
+    ></ow-input-number>
     <ow-select
     [label]="'都道府県'"
     [items]="items"

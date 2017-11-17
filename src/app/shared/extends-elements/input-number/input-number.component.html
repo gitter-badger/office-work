@@ -1,0 +1,16 @@
+<label>{{label}}</label> 
+<input type="text"
+  [hidden]="!flg"
+  [ngModel]="value|number"
+  readonly
+  (click)="onClick(false)">
+<input type="{{type}}"
+  [hidden]="flg"
+  [(ngModel)]="value"
+  #name="ngModel"
+  placeholder="{{placeholder}}"
+  required="{{required}}"
+  disabled="{{disabled}}"
+  (blur)="onOutput(value); onClick(true)"
+>
+<div class="error-message"><span *ngIf="!flg&&required&&name.dirty&&name.invalid">必須入力です</span></div>

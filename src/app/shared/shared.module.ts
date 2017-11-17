@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SelectComponent } from './extends-elements/select/select.component';
 import { InputComponent } from './extends-elements/input/input.component';
 import { ButtonComponent } from './extends-elements/button/button.component';
+import { InputNumberComponent } from './extends-elements/input-number/input-number.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { ButtonComponent } from './extends-elements/button/button.component';
     FooterComponent,
     SelectComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputNumberComponent
   ],
   declarations: [
     SlideMenuComponent,
@@ -27,7 +29,8 @@ import { ButtonComponent } from './extends-elements/button/button.component';
     FooterComponent,
     SelectComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputNumberComponent
   ]
 })
 export class SharedModule { }
