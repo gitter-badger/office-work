@@ -13,6 +13,7 @@ export class SelectComponent implements OnInit {
 
   @Input() label: string;
   @Input() items: Select;
+  @Input() required: boolean;
   selectedItem: Select;
 
   constructor() { }

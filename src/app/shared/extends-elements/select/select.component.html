@@ -3,6 +3,8 @@
   <select [(ngModel)]="selectedItem">
     <option *ngFor="let item of items;" [ngValue]="item" >{{item.value}}</option>
   </select>
-  <input type="text" [(ngModel)]="selectedItem.value">
+  <input type="text"
+  #name="ngModel"
+  [(ngModel)]="selectedItem.value">
 </div>
 <div class="error-message"><span *ngIf="required&&name.dirty&&name.invalid">必須入力です</span></div>

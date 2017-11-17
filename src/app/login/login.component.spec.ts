@@ -42,6 +42,7 @@ export class SelectWapperComponent implements OnInit {
 
   @Input() label: string;
   @Input() items: Select;
+  @Input() required: boolean;
 
   constructor() { }
 
