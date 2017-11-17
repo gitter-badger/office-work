@@ -35,11 +35,9 @@ export class ButtonWapperComponent implements OnInit {
 }
 
 @Component({
-<<<<<<< HEAD
   selector: 'ow-input-number',
   template: ``
 })
-
 export class InputNumberWapperComponent implements OnInit {
   @Input() label: string;
   @Input() type: string;
@@ -48,7 +46,13 @@ export class InputNumberWapperComponent implements OnInit {
   @Input() required: boolean;
   @Input() disabled = false;
   @Input() placeholder: string;
-=======
+
+  constructor() { }
+
+  ngOnInit() { }
+}
+
+@Component({
   selector: 'ow-select',
   template: ``
 })
@@ -57,21 +61,17 @@ export class SelectWapperComponent implements OnInit {
   @Input() label: string;
   @Input() items: Select;
   @Input() required: boolean;
->>>>>>> develop
 
   constructor() { }
 
   ngOnInit() { }
 }
 
-<<<<<<< HEAD
-=======
 export class Select {
   key: string;
   value: string;
 }
 
->>>>>>> develop
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
@@ -83,11 +83,8 @@ describe('LoginComponent', () => {
         LoginComponent,
         InputWapperComponent,
         ButtonWapperComponent,
-<<<<<<< HEAD
-        InputNumberWapperComponent
-=======
+        InputNumberWapperComponent,
         SelectWapperComponent
->>>>>>> develop
       ]
     })
     .compileComponents();
