@@ -6,7 +6,7 @@
 
 nav {
   background-color: $corp-color;
-  color: $base-color;
+  color: $menu-color;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -14,22 +14,27 @@ nav {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
-  margin: 15px 2px;
+  padding: 19px 24px;
 }
 
 a {
+  line-height: 1.7em;
+  vertical-align: top;
   white-space: nowrap;
 }
 
 a > span {
-  padding: 0 1rem;
+  padding-right: .5em;
 }
 
 .open {
-  margin: 20px;
+  color: $corp-color;
+  cursor: default;
 }
 
 span {
@@ -37,7 +42,24 @@ span {
   white-space: nowrap;
 }
 
-div {
-  margin-top: 10px;
-  vertical-align: middle;
+.material-icons {
+  font-size: 1.8em;
+}
+
+.close-menu {
+  border-bottom: 1px solid $base-color;
+  padding: 13px 24px;
+}
+
+.open-menu {
+  border-bottom: 1px solid $gray-color;
+  padding: 15px 24px;
+}
+
+hr {
+  margin: 0;
+}
+
+img {
+  height: 25px;
 }
