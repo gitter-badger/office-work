@@ -47,7 +47,7 @@ export class InputNumberWapperComponent implements OnInit {
   @Input() required: boolean;
   @Input() disabled = false;
   @Input() placeholder: string;
-  
+
   constructor() { }
 
   ngOnInit() { }
