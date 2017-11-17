@@ -1,4 +1,5 @@
 <div class="open-menu"><a class="open" [@collapseButton]="collapse" (click)="toggleCollapse()"><span class="material-icons">view_headline</span></a></div>
+<div [ngClass]="collapse==='open' ? 'protected': ''"></div>
 <nav [@collapse]="collapse">
   <span [hidden]="collapse==='closed'">
     <div class="close-menu"><a class="open" [@collapseButton]="collapse" (click)="toggleCollapse()"><img src="assets/images/logo.svg" alt="Ashiras, inc." /></a></div>
