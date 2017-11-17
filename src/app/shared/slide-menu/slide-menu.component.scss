@@ -1,15 +1,12 @@
 @import "../../../colors";
 
-:host {
-  z-index: 2147483647;
-}
-
 nav {
   background-color: $corp-color;
   color: $menu-color;
   height: 100vh;
   position: absolute;
   top: 0;
+  z-index: 2147483647;
 }
 
 ul {
@@ -62,4 +59,16 @@ hr {
 
 img {
   height: 25px;
+}
+
+.protected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $border-color;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 2147483646;
 }
